@@ -4,6 +4,10 @@ import SobreNosotros from "./componentes/sobrenosotros";
 import Login from "./componentes/login";
 import Registro from "./componentes/registro";
 import Contactanos from "./componentes/contacto";
+import HomeM from "./componentesm/homem";
+import Citas from "./componentesm/citas"
+import Usuarios from "./componentesm/usuarios";
+import Ajustes from "./componentesm/ajustes";
 
 export default function App() {
   return (
@@ -13,6 +17,10 @@ export default function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/registro" element={<Registro />} />
       <Route path="/contacto" element={<Contactanos />} />
+      <Route path="/homem" element={<HomeM />} />
+      <Route path="/citas" element={<Citas />} />
+      <Route path="/usuarios" element={<Usuarios />} />
+      <Route path="/ajustes" element={<Ajustes />} />
     </Routes>
   );
 }
